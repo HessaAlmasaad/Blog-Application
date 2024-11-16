@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9eca43cf7d.js" crossorigin="anonymous"></script>
+    <title>{{blog.title}}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="dis_background">
+    <div class="disnav">
+        <a href="/" class="disanchor"> HOME</a>
+        <a href="/logout" class="disanchor"> Logout </a>
+    </div>
+    <div class="wrapper1">
+        <p class="bl_title">
+        {{blog.title}}
+    </p> <br>
+
+    <img src="{{blog.pic}}" height="300px" width="300px"> <br>
+
+    <button type="button" onClick="clickME()"  id="like-btn"><p><a id="likes">0   </a><i class="fa fa-heart"style="color:red"></i></p></button>
+    
+    <script>
+        var likes = 0;
+        function clickME() {
+        likes += 1;
+        document.getElementById("likes").innerHTML = likes;
+}
+    </script>
+    <br>
+    {{blog.content}} <br>
+    {% if blog.uploaded_by.id == user.id %}
+    <a href="/blogs/{{blog.id}}/delete" class="btn"><i class="fa-solid fa-trash-can"></i></a>
+    {% endif %}
+</div>
+    
+</body>
+</html>

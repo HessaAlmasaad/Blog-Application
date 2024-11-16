@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="home_background">
+    <div class="homenav">
+      <a href="/login"  class="anchor">LOGIN</a>
+      <a href="#"  class="anchor">ABOUT</a>
+      <a href="#"  class="anchor">CONTACT</a>
+    </div>
+    <div class="bottomnav">
+      <a href="/blogs"  class="anchor">ALL</a>
+      <a href="/blogs/NATURE"  class="anchor">NATURE</a>
+      <a href="/blogs/RELAXATION"  class="anchor">RELAXATION</a>
+      <a href="/blogs/VACATION"  class="anchor">VACATION</a>
+      <a href="/blogs/TRAVEL"  class="anchor">TRAVEL</a>
+      <a href="/blogs/ADVENTURE"  class="anchor">ADVENTURE</a>
+    </div>
+    <div class="blog_name">
+      <p class="title">Travel Spot</p>
+      <h2>LET'S DO IT TOGETHER</h2> <br> <br> 
+      <p>“The world is a book and those who do not travel read only one page” <span class="say">-Saint Augustine </span></p>
+      <p>“If you think adventure is dangerous, try routine, it’s lethal”      <span class="say">  -Paul Coelho</span></p>
+      <br>
+      <a href="/blogs" class="view_button view_anchor">VIEW LATEST POSTS</a>
+    </div>
+    <div>
+    </div>
+  </div>
+</body>
+</html>

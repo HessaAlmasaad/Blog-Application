@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="all_blogs_back">
+  <div class="newnav">
+    <p> <span>HI! </span>{{user.fname}}    <p> <a href="/blogs/create" class="newbloganchor"> Create your own blog! </a> </p></p>
+</div>
+  <div>
+    <div class="all_blogs_head">
+      {% if isThereCat == False %}
+      <h1>All Blogs</h1>
+      {% endif %}
+      {% if isThereCat == True %}
+      <h1>{{cat}}</h1>
+      {% endif %}
+    </div>
+    <div class="all_cat">
+      <a href="/"  class="anchor1">HOME</a>
+      <a href="/blogs/NATURE"  class="anchor1">NATURE</a>
+      <a href="/blogs/RELAXATION"  class="anchor1">RELAXATION</a>
+      <a href="/blogs/VACATION"  class="anchor1">VACATION</a>
+      <a href="/blogs/TRAVEL"  class="anchor1">TRAVEL</a>
+      <a href="/blogs/ADVENTURE"  class="anchor1">ADVENTURE</a>
+    </div>
+  </div>
+  <hr class="all_hr">
+  <div class="wrapper">
+  {% for blog in blogs %}
+  <div class="card" style="width: 18rem;" >
+    <img src="{{blog.pic}}" class="card-img-top" alt="..." height="250px">
+    <div class="card-body">
+      <h5 class="card-title">{{blog.title}}</h5>
+      <p class="card-text">{{blog.content|slice:":25"}}</p>
+      <a href="/blogs/view/{{blog.id}}" class=" read_btn anchor1">Read More...</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+</body>
+</html>

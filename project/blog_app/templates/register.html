@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %}
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  <div class="user_background" >
+    <div class="loginhead">
+    <h2 class="spot">Travel Spot</h2>
+    <div class="loginanchor">
+    <a href="/">HOME</a>
+    <a href="/" >ABOUT</a>
+    <a href="/" >CONTACT</a>
+    </div>
+  </div>
+</div>
+<div class="arrange">
+<h3>Register</h3>
+      <hr class="loginhr">
+    <div class="register">
+      
+      <div class="register_flex1">
+      <form action='/register' method='post'>
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="fn" class="form-label">First Name</label>
+          <input type="text" name="fn" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="ln" class="form-label">Last Name</label>
+          <input type="text" name="ln" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" class="form-control">
+        </div>
+      </div>
+      <div class="register_flex2">
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" name="password" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="cPassword" class="form-label">Confirm Password</label>
+          <input type="password" name="cPassword" class="form-control">
+        </div>
+      
+        <button type="submit" class="loginbutton2">Sign Up!</button>
+      </div>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

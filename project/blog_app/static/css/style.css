@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+.home_background {
+    background-image: url("/static/img/nature.jpg"), url("/static/img/swiss.jpg");
+    transition: background-image 1s;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+ .blog_name{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 25%;
+    height:100vh ;
+    margin-left: 150px;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    justify-content: center;
+    text-align: center;
+    position:absolute;
+    top: 0px;
+    max-width: 40%;
+
+ }
+ .title{
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    margin-left: 20%;
+    font-size: 1.7rem; 
+ }
+ .homenav{
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    margin-left: 700px;
+    width: 30%;
+ }
+ .anchor{
+    text-decoration: none;
+    color: aliceblue;
+ }
+ .bottomnav{
+   background-color: black;
+   width: 64%;
+   display: flex;
+   justify-content: space-around;
+   position: fixed;
+   margin-bottom: 0px;
+   margin-left: 470px;
+   margin-top: 530px;
+   height: 50px;
+   align-content: center;
+   padding: 15px;
+
+ }
+ .view_button{
+   background-color: #edae6b ;
+   border: currentColor;
+   padding: 6px;
+   width:200px;
+   margin-left: 28px;
+   margin-top: 35px;
+   border-radius: 5px;
+   
+ }
+ .view_anchor{
+   text-decoration: none;
+   color: black;
+ }
+ .user_background {
+   background-image: url("/static/img/bridg.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 250px;
+   text-align: center;
+}
+.login{
+height: 40%;
+width: 40%;
+margin-left: 30%;
+}
+.loginhr{
+   width: 75px;
+   height: 4px;
+   background-color: #edae6b;
+   border: #edae6b solid ;
+}
+.loginbutton{
+   background-color: #edae6b ;
+   border: currentColor;
+   padding: 6px;
+   width: 100px;
+   border-radius: 5px;
+}
+
+.loginhead{
+   display: flex;
+   justify-content: space-between;
+   color: black;
+   text-decoration: none;
+   padding-top: 20px;
+   width: 90%;
+   margin: 0 auto;
+
+}
+.loginanchor a{
+   text-decoration: none;
+   color: black;
+   margin-right: 10px;
+}
+.register{
+   display: flex;
+}
+.arrange{
+   margin-left: 30%;
+}
+.register_flex2{
+   margin-left: 20px;
+}
+.loginbutton2{
+   background-color: #edae6b ;
+   border: currentColor;
+   padding: 6px;
+   width: 100px;
+   margin-top: 33px;
+   border-radius: 5px;
+   padding: 6px;
+}
+.say{
+   font-size: 0.7rem;
+}
+.all_blogs_back{
+   background-color: #fbf2e8;
+}
+.all_blogs_head{
+   display: flex;
+   justify-content: space-between;
+   color: black;
+   text-decoration: none;
+   padding-top: 20px;
+   margin-left: 550px;
+   width: 50%;
+  
+
+}
+.logout{
+   text-decoration: none;
+   color: black;
+   font-family: 'Lora', serif;
+}
+.all_cat{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.anchor1{
+   color: black;
+   text-decoration: none;
+}
+.all_hr{
+   width: 44%;
+   margin:0 auto;
+   
+}
+.wrapper{
+   width: 75%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+}
+.card{
+   margin-top: 17px;
+   border:none ;
+}
+.read_btn{
+   background-color: #edae6b ;
+   border: currentColor;
+   padding: 6px;
+   width: 100px;
+   margin-top: 33px;
+   border-radius: 5px;
+   padding: 6px;
+}
+.wrapper1{
+   max-width: 35%;
+   margin: 0 auto;
+}
+.disnav{
+   display: flex;
+   justify-content: space-between;
+   gap: 300px;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   background-color: black;
+   height: 40px;
+   padding-bottom: 20px;
+   padding-left: 15px;
+   padding-right: 15px;
+
+}
+.disanchor{
+   text-decoration: none;
+   color: white;
+   margin-top: 20px;
+}
+.dis_background {
+   background-color: #fdf2f2;
+}
+#likes{
+  margin-left: 0px;
+  margin-top: 0px; 
+}
+#like-btn{
+
+   margin-left: 10px;
+}
+.bl_title{
+   margin: 0 auto;
+   font-size: 30px;
+}
+.newnav{
+   display: flex;
+   gap: 30px;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   background-color: black;
+   height: 40px;
+   padding-top: 7px;
+   padding-bottom: 20px;
+   padding-left: 15px;
+   padding-right: 15px;
+   color: #fbf2e8;
+   
+}
+.newbloganchor{
+   text-decoration: none;
+   color: #fdf2f2;
+}
+.create_{
+   text-align: center;
+}
+.hr_{
+   width: 50%;
+   align-items: center;
+   margin-left: 25%;
+}
+.wrapper_{
+width: 70%;
+margin-left: 20%;
+}
